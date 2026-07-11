@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout de Cabeçalho e Navegação</title>
+    <link rel="stylesheet" href="estilos/layout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="https://brotherblazzard.github.io/images/icons/coloredGears.png" alt="Sample Logo">
+        <div id="logo">Wasatch Accusystems</div>
+        <nav>
+            <ul class="navegacao">
+                <li><a href="#">Serviço</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Histórico</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Layouts de Cabeçalho e Navegação</h1>
+        <section>
+            <h2>&lt;header&gt;: CSS Grid</h2>
+            <p>Este cabeçalho é um exemplo de um layout CSS Grid. Ele usa a propriedade <code>display: grid;</code> para
+                criar uma estrutura de grade.</p>
+            <p>O cabeçalho tem três elementos filhos: <code>&lt;img&gt;</code>, <code>&lt;div&gt;</code> e
+                <code>&lt;nav&gt;</code>
+            </p>
+            <p>Esses elementos são itens de grade, uma vez que seu pai é um contêiner de grade e, portanto, esses elementos participam do
+                layout de grade.</p>
+            <p>O cabeçalho usa as seguintes declarações CSS para criar o layout de grade:
+            <pre><code>display: grid;
+ grid-template-columns: 120px 1fr 1fr;
+ align-items: center;</code></pre>
+            </p>
+            <p>Como resultado, o cabeçalho é dividido em três áreas: uma área de logotipo, uma área de título e uma área de navegação
+                que estão lado a lado.</p>
+
+            <ul>
+                <li><code>display</code> faz do cabeçalho uma grade</li>
+                <li><code>grid-template-columns</code> define que existem três colunas, a primeira com um tamanho fixo de 120px e as demais compartilhando igualmente o restante do espaço</li>
+                <li><code>align-items</code> alinha os itens da grade ao meio do cabeçalho (a grade)</li>
+            </ul>
+
+        </section>
+
+        <section>
+            <h2>&lt;nav&gt;: CSS Flexbox</h2>
+            <p>Esta navegação é um exemplo de um layout CSS Flexbox. Ele usa a propriedade <code>display: flex;</code> para
+                criar um layout flexível.</p>
+            <p>A navegação tem um elemento filho: <code>&lt;ul&gt;</code>, que deve ser o contêiner Flex porque seus
+                elementos filhos (os itens da lista) precisam trabalhar juntos como itens flexíveis.</p>
+            <p>O <code>ul</code> com a classe de <code>navegacao</code> usa as seguintes declarações CSS para
+                criar o layout flex:
+            <pre><code>display: flex;
+ list-style: none;</code></pre>
+            </p>
+            <p>Como resultado, os itens de navegação são distribuídos uniformemente dentro da área de navegação.</p>
+            <ul>
+                <li><code>display</code> faz da nav um contêiner flexível</li>
+                <li><code>list-style</code> remove a estilização padrão da lista</li>
+            </ul>
+
+            <p>A propriedade <code>flex</code> do <code>li</code> (itens da lista) é usada nos itens da lista para controlar seu
+                tamanho e como eles crescem ou encolhem dentro da nav.</p>
+            <pre><code>flex: 1 1 auto;</code></pre>
+        </section>
+    </main>
+
+</body>
+
+</html>

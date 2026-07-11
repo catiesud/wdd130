@@ -1,0 +1,3 @@
+Imagem do Templo de: https://www.churchofjesuschrist.org/media/collection/accra-ghana-temple-images?lang=eng
+
+Licença: Salvo indicação em contrário, indivíduos podem publicar material da seção Gospel Media deste site em outro website ou em uma rede de computadores para seu próprio uso pessoal e não comercial. Este direito pode ser revogado a qualquer momento e por qualquer motivo. Organizações e entidades legais que desejarem usar material do Gospel Media podem solicitar permissão através da nossa página de Permissões. Para mais informações sobre o uso e compartilhamento de mídia da Igreja, consulte nossa página de Perguntas Frequentes.

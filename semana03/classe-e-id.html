@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos de Classe vs ID</title>
+    <link rel="stylesheet" href="estilos/classe-e-id.css">
+</head>
+
+<body>
+    <h1>Compreendendo os Atributos de Classe e ID</h1>
+    <p>Tanto <code>class</code> quanto <code>id</code> são atributos HTML usados para identificar e estilizar qualquer
+        elemento, mas eles servem a propósitos diferentes. <code>class</code> define um grupo de elementos, enquanto
+        <code>id</code> identifica exclusivamente um único elemento.
+    </p>
+    <p>Como desenvolvedor, você decide quais valores ou identificadores devem ser atribuídos a classes e IDs. Esses
+        identificadores devem ser descritivos e seguir uma convenção de nomenclatura consistente. Por exemplo,
+        "<strong>box</strong>" é um bom nome de classe para um contêiner genérico.</p>
+    <div class="box">
+        <p>O div HTML tem uma classe <strong>box</strong>.</p>
+        <pre><code class="html">&lt;div class="box"&gt; ... &lt;/div&gt;</code></pre>
+        e o seletor CSS é (note a notação de ponto)
+        <pre><code class="css">.box {
+  margin: 20px 0;
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: 10px;
+  background-color: #ddd; 
+}</code></pre>
+    </div>
+
+    <div class="box highlight">
+        <p>Este div tem duas classes atribuídas: <strong>box</strong> e <strong>highlight</strong>. Portanto, o div terá
+            os estilos de ambas as classes aplicados.</p>
+        <pre><code class="html">&lt;div class="box highlight"&gt; ... &lt;/div&gt;</code></pre>
+        e o seletor CSS para highlight é
+        <pre><code class="css">.highlight {
+  background-color: #efefaa;
+  border-radius: 25px;
+  padding: 25px;
+}</code></pre>
+        <p>Algumas declarações (<code>background-color</code> e <code>padding</code>, de "box") são sobrescritas pelas
+            mesmas declarações em "highlight" porque "highlight" aparece após "box" na cascata CSS.</p>
+    </div>
+
+    <div id="note" class="box">
+        <p>Este é um div com um ID exclusivo "note" e a mesma classe "box".</p>
+        <pre><code class="html">&lt;div id="note" class="box"&gt; ... &lt;/div&gt;</code></pre>
+        e o seletor CSS é
+        <pre><code class="css">#note {
+  background-color: #333;
+  color: white;
+  width: fit-content;
+}</code></pre>
+    </div>
+
+    <div id="note">
+        <p>Testando o ID <code>note</code>.</p>
+    </div>
+
+    <section id="melhor-pratica">
+        <ul>
+            <li><strong>NÃO</strong> use o mesmo ID em mais de um elemento</li>
+            <li><strong>NÃO</strong> use IDs para estilização que se aplica a muitos elementos</li>
+            <li><strong>NÃO</strong> comece nomes de classe ou ID com números</li>
+            <li><strong>NÃO</strong> use espaços em nomes de classe ou ID (use hífens ou sublinhados)</li>
+        </ul>
+    </section>
+
+    <br>
+
+</body>
+
+</html>

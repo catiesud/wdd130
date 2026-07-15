@@ -102,9 +102,8 @@ aside h2 {
 }
 
 nav h2 {
-    margin:auto
+    margin: auto;
     display: contents;
-
 }
 ul.caixa{
     margin-top: 20px;

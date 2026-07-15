@@ -122,3 +122,8 @@ ul.caixa{
     padding: 0;
     
 }
+nav a {
+  color: blue;        /* cor do texto */
+  padding: 10px;      /* espaço interno */
+  display: block;     /* faz o link ocupar toda a largura disponível */
+}

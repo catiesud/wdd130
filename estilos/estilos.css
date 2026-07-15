@@ -16,7 +16,7 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 20px;
     padding: 20px;
-    background-color: #f5f5f5  ;
+    background-color: #9c9090  ;
 }
 main {
     max-width: 840px;
@@ -50,12 +50,16 @@ main img {
     width: 150px;
     height: auto;
     float: right;
+    padding: 0;
+    box-shadow: none;
 
 }
 nav {
+    background-color: #000;
+    color: #eee;
+    padding: 0;
     border-bottom:20px #ddd;
     columns: auto;
-    color: #eee;
     margin-bottom: 70px;
     text-align: center;
     border-top: 1px solid #333;
@@ -77,8 +81,8 @@ footer {
 header,
 footer {
 
-    background-color: hsl(233, 13%, 63%);
-    color: #0f0f0f;
+    background-color: hwb(233 6% 15%);
+    color: #eee;
     margin: 0;
 
     padding: 0;
@@ -100,10 +104,17 @@ aside h2 {
   top: 47px;
   left: 150px;
 }
+h1 {
+color: #ddd;    
+}
 
 nav h2 {
+    color: #f5f5f5;
+    padding: 0;
+    display: block;
     margin: auto;
     display: contents;
+
 }
 ul.caixa{
     margin-top: 20px;

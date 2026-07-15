@@ -1,7 +1,23 @@
+*{
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Seletores de Classe */
+.caixa {
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: 1rem;
+  background-color: #ddd;
+  color: #000;
+}
+   
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f5f5f5  ;
 }
-
 main {
     max-width: 840px;
 }
@@ -25,11 +41,27 @@ aside img {
 
 }
 
+
+
 main img {
-    width: 150ox;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #0000ff;
+    width: 150px;
     height: auto;
+    float: right;
 
 }
+nav {
+    border-bottom:20px #ddd;
+    columns: auto;
+    color: #eee;
+    margin-bottom: 70px;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+
 
 p {
     padding: 0;
@@ -45,8 +77,38 @@ footer {
 header,
 footer {
 
-    background-color: hsl(75, 50%, 3%);
-    color: #fff;
-    margin: 15px;
+    background-color: hsl(233, 13%, 63%);
+    color: #0f0f0f;
+    margin: 0;
+
     padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+  
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    border: 1px solid #000;
+}
+
+aside h2 {
+  position: auto;
+  top: 47px;
+  left: 150px;
+}
+
+nav h2 {
+    margin:auto
+    display: contents;
+
+}
+ul.caixa{
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+    
 }

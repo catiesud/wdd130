@@ -2,10 +2,14 @@
 
 /* 1. Definição das variáveis globais */
 :root {
-  --cor-primaria: #055a05;       /* verde-floresta */
-  --cor-secundaria: #f4a261;     /* bege médio */
-  --cor-destaque1: #010f0ff0;      /* azul-escuro acinzentado */
-  --cor-destaque2: #e9c46a;      /* amarelo-claro dourado */
+  --cor-primaria: #055a05;
+  /* verde-floresta */
+  --cor-secundaria: #f4a261;
+  /* bege médio */
+  --cor-destaque1: #010f0ff0;
+  /* azul-escuro acinzentado */
+  --cor-destaque2: #e9c46a;
+  /* amarelo-claro dourado */
   --fonte-titulo: "Times New Roman", "Georgia", serif;
   --fonte-body: Arial, Helvetica, sans-serif;
 }
@@ -18,8 +22,8 @@
 }
 
 header {
-    background-color: var(--cor-primaria);
-    color: var(--cor-destaque2);
+  background-color: var(--cor-primaria);
+  color: var(--cor-destaque2);
 }
 
 /* 3. Estilo geral do body */
@@ -30,7 +34,9 @@ body {
 }
 
 /* 4. Limite de largura e centralização */
-header, main, footer {
+header,
+main,
+footer {
   width: 840px;
   margin: 0 auto;
 }
@@ -54,7 +60,8 @@ nav a {
 }
 
 /* 7. Títulos */
-h1, h2 {
+h1,
+h2 {
   font-family: var(--fonte-titulo);
   color: var(--cor-primaria);
   text-align: center;
@@ -62,7 +69,10 @@ h1, h2 {
 }
 
 /* 8. Margens e espaçamento */
-nav, p, section, article {
+nav,
+p,
+section,
+article {
   margin: 16px;
   padding: 8px;
 }
@@ -99,14 +109,16 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(5, 90, 5, 0.6); /* sobreposição verde translúcida */
+  background-color: rgba(5, 90, 5, 0.6);
+  /* sobreposição verde translúcida */
   padding: 12px 24px;
   border-radius: 8px;
 }
 
 /* Hero container */
 .hero {
-  position: relative; /* permite posicionar filhos com absolute */
+  position: relative;
+  /* permite posicionar filhos com absolute */
   text-align: center;
   color: white;
 }
@@ -115,29 +127,34 @@ footer {
 .hero img {
   display: block;
   width: 100%;
-  height: auto; /* mantém proporção */
+  height: auto;
+  /* mantém proporção */
 }
 
 /* Título sobre a imagem */
 .hero h1 {
   position: absolute;
-  top: 20px; /* distância do topo */
+  top: 20px;
+  /* distância do topo */
   width: 100%;
   padding: 16px;
   text-align: center;
   opacity: 0.8;
   background-color: var(--cor-destaque1);
-  color: #fff; /* contraste */
+  color: #fff;
+  /* contraste */
   font-family: var(--fonte-titulo);
 }
 
 /* Article sobre a imagem */
 .hero article {
   position: absolute;
-  bottom: 20px; /* distância da base */
+  bottom: 20px;
+  /* distância da base */
   left: 20px;
   right: 20px;
-  background-color: rgba(244, 162, 97, 0.8); /* cor secundária translúcida */
+  background-color: rgba(244, 162, 97, 0.8);
+  /* cor secundária translúcida */
   padding: 12px;
   border-radius: 8px;
   color: #000;
@@ -149,12 +166,12 @@ footer {
   width: 125px;
   margin: 8px;
   border: 2px solid var(--cor-primaria);
-  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
-
 .hero {
-  position: relative; /* permite posicionar filhos com absolute */
+  position: relative;
+  /* permite posicionar filhos com absolute */
 }
 
 .hero img {
@@ -166,13 +183,22 @@ footer {
 /* Sobreposição centralizada na parte inferior */
 .hero .overlay {
   position: absolute;
-  bottom: 20px;       /* distância da base da imagem */
-  left: 50%;          /* centraliza horizontalmente */
-  transform: translateX(-50%); /* ajusta para o centro exato */
-  background-color: rgba(38, 70, 83, 0.8); /* cor translúcida */
-  color: #fff;        /* texto branco para contraste */
+  bottom: 20px;
+  /* distância da base da imagem */
+  left: 50%;
+  /* centraliza horizontalmente */
+  transform: translateX(-50%);
+  /* ajusta para o centro exato */
+  background-color: rgba(38, 70, 83, 0.8);
+  /* cor translúcida */
+  color: #fff;
+  /* texto branco para contraste */
   padding: 12px 24px;
   border-radius: 8px;
   text-align: center;
   font-family: var(--fonte-titulo);
+}
+
+.redes-sociais a {
+  text-decoration: none;
 }

@@ -85,6 +85,10 @@ nav a {
   text-decoration: none;
   font-weight: bold;
 }
+figure img {
+  height: 100;
+}
+
 
 /*  Títulos */
 h1,

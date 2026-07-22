@@ -33,7 +33,6 @@ body {
   color: var(--cor-destaque1);
   background-color: #fff;
 }
-
 /*  Limite de largura e centralização */
 header,
 main
@@ -42,15 +41,50 @@ main
   margin: 0 auto;
 }
 
+
+
+
+main {
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  color: var(--cor-primaria);
+  margin-bottom: 1rem;
+}
+
+figure {
+  display: inline-block;
+  margin: 0.5rem;
+  text-align: center;
+}
+
+figure img {
+  width: 150px;
+  height: 100;
+  border-radius: 6px;
+}
+
+
 /*  Cabeçalho */
 header {
   background-color: var(--cor-primaria);
-  color: var(--cor-destaque2);
-  padding: 16px;
-  display: flex;
+  color: #000;
+  display: flex; /* escolha apenas um layout */
   align-items: center;
-  justify-content: space-between;
+  padding: 16px; /* defina o valor final */
 }
+
+/*  Rodapé */
+footer {
+  background-color:var(--cor-primaria);
+  color:#000
+}
+
 
 /*  Navegação */
 nav a {
@@ -78,19 +112,33 @@ article {
   padding: 8px;
 }
 
-/*  Rodapé */
-footer {
-  background-color: var(--cor-secundaria);
-  color: var(--cor-destaque1);
-  text-align: center;
-  padding: 16px;
-}
+
 
 /*  Links das redes sociais */
 .redes-sociais a {
   text-decoration: none;
   margin: 0 8px;
 }
+
+footer {
+  background-color: var(--cor-primaria);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer .socialmedia {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+}
+
+footer .socialmedia img {
+  width: 24px;
+  height: 24px;
+}
+
 
 /*  Hero com sobreposição */
 .hero {
@@ -202,17 +250,23 @@ footer {
   font-family: var(--fonte-titulo);
 }
 
+header {
+  background-color: var(--cor-primaria);
+  color: var(--cor-destaque2);
+  display: flex; /* escolha apenas um layout */
+  align-items: center;
+  padding: 16px; /* defina o valor final */
+}
+
 
 header {
-  display: grid;
-  grid-template-columns: auto 1fr;
+  background-color: var(--cor-primaria);
+  color: var(--cor-destaque2);
+  display: flex; /* escolha apenas um layout */
   align-items: center;
-  padding: 10px;
+  padding: 16px; /* defina o valor final */
 }
-header img {
-  max-height: 60px;
 
-}
 
 nav {
   display: flex;

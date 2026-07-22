@@ -1,9 +1,10 @@
-/* rafting.css */
 
-/* 1. Definição das variáveis globais */
+
+/*  Definição das variáveis globais */
 :root {
   --cor-primaria: #055a05;
   /* verde-floresta */
+
   --cor-secundaria: #f4a261;
   /* bege médio */
   --cor-destaque1: #010f0ff0;
@@ -14,7 +15,7 @@
   --fonte-body: Arial, Helvetica, sans-serif;
 }
 
-/* 2. Reset do box-model */
+/*  Reset do box-model */
 * {
   margin: 0;
   padding: 0;
@@ -26,22 +27,22 @@ header {
   color: var(--cor-destaque2);
 }
 
-/* 3. Estilo geral do body */
+/*  Estilo geral do body */
 body {
   font-family: var(--fonte-body);
   color: var(--cor-destaque1);
   background-color: #fff;
 }
 
-/* 4. Limite de largura e centralização */
+/*  Limite de largura e centralização */
 header,
-main,
-footer {
+main
+ {
   width: 840px;
   margin: 0 auto;
 }
 
-/* 5. Cabeçalho */
+/*  Cabeçalho */
 header {
   background-color: var(--cor-primaria);
   color: var(--cor-destaque2);
@@ -51,7 +52,7 @@ header {
   justify-content: space-between;
 }
 
-/* 6. Navegação */
+/*  Navegação */
 nav a {
   margin: 0 8px;
   color: var(--cor-destaque2);
@@ -59,7 +60,7 @@ nav a {
   font-weight: bold;
 }
 
-/* 7. Títulos */
+/*  Títulos */
 h1,
 h2 {
   font-family: var(--fonte-titulo);
@@ -68,7 +69,7 @@ h2 {
   margin: 16px 0;
 }
 
-/* 8. Margens e espaçamento */
+/*  Margens e espaçamento */
 nav,
 p,
 section,
@@ -77,7 +78,7 @@ article {
   padding: 8px;
 }
 
-/* 9. Rodapé */
+/*  Rodapé */
 footer {
   background-color: var(--cor-secundaria);
   color: var(--cor-destaque1);
@@ -85,13 +86,13 @@ footer {
   padding: 16px;
 }
 
-/* 10. Links das redes sociais */
+/*  Links das redes sociais */
 .redes-sociais a {
   text-decoration: none;
   margin: 0 8px;
 }
 
-/* 11. Hero com sobreposição */
+/*  Hero com sobreposição */
 .hero {
   position: relative;
   text-align: center;
@@ -169,9 +170,11 @@ footer {
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
+/*  posicionar filhos com absolute */
+
 .hero {
   position: relative;
-  /* permite posicionar filhos com absolute */
+  
 }
 
 .hero img {
@@ -199,6 +202,68 @@ footer {
   font-family: var(--fonte-titulo);
 }
 
+
+header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 10px;
+}
+header img {
+  max-height: 60px;
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.historia {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 20px;
+  align-items: center;
+}
+.historia img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.aventura {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.aventura figure {
+  text-align: center;
+  flex: 1;
+}
+.aventura img {
+  width: 100%;
+  border-radius: 6px;
+}
+
 .redes-sociais a {
   text-decoration: none;
 }
+
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  padding: 10px;
+}
+
+footer img {
+  height: 40px;
+}
+
+
+

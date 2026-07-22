@@ -43,7 +43,6 @@ main
 
 
 
-
 main {
   padding: 1rem;
 }
@@ -73,17 +72,10 @@ figure img {
 /*  Cabeçalho */
 header {
   background-color: var(--cor-primaria);
-  color: #000;
-  display: flex; /* escolha apenas um layout */
-  align-items: center;
-  padding: 16px; /* defina o valor final */
+  color: var(--cor-secundaria)
+  
 }
 
-/*  Rodapé */
-footer {
-  background-color:var(--cor-primaria);
-  color:#000
-}
 
 
 /*  Navegação */
@@ -112,6 +104,21 @@ article {
   padding: 8px;
 }
 
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0; /* Fica visível quando recebe foco */
+}
+
+
 
 
 /*  Links das redes sociais */
@@ -122,9 +129,8 @@ article {
 
 footer {
   background-color: var(--cor-primaria);
-  color: white;
-  text-align: center;
-  padding: 1rem;
+  color:var(--cor-secundaria)
+  
 }
 
 footer .socialmedia {

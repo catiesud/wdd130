@@ -8,6 +8,7 @@
     <meta name="description"content="Aventura de Rafting & Natureza, emoção e natureza em cada descida. ">
     <meta name="author" content="Catiana Guillaume">
     <link rel="stylesheet" href="estilos/rafting.css">
+<link rel="stylesheet" href="">
 </head>
 
 <body>
@@ -16,7 +17,7 @@
         <img src="imagens/logo.png" alt="Logo da Empresa" width="150">
 
        <!-- Link de salto para o conteúdo -->
-  <a href="#conteudo-principal" class="skip-link">Ir para o conteúdo principal</a>
+        <a href="#"conteudo-principal" class="skip-link">Ir para o conteúdo principal</a>
 
     <h1>Nome da Empresa de Rafting</h1>
     <nav>
@@ -80,8 +81,19 @@
    
 
     <footer>
-      <p>&copy;2026 Rafting & Natureza | Catiana Guillaume <span id="ano"></span> | Última modificação: <span id="modificado"></span></p>
+        <div class="footer-content">
+    <span>©2026 Rafting & Natureza | Catiana Guillaume</span>
+    <span id="lastModified"></span>
+  </div>
+        <!-- Referência ao arquivo JavaScript -->
+  <script src="scripts/sobre.js"></script>
+<script>
+  // Captura a data da última modificação
+  const lastModified = document.lastModified;
 
+  // Insere no elemento do footer
+  document.getElementById("lastModified").textContent = lastModified;
+</script>
       <nav class="socialmedia">
         <a href="https://facebook.com" target="_blank"></a>
          <img src="imagens/facebook-rafting.svg" alt="icone de facebook">
@@ -93,7 +105,10 @@
              <img src="imagens/instagram-rafting.svg" alt="icone de instagram">
          </a>
       </nav>
+
+       
 </footer>
+
 
 </body>
 

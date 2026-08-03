@@ -1,86 +1,142 @@
+/* contato.css */
+
 body {
+    font-family: Arial, sans-serif;
+    margin: 0;
     padding: 0;
-    margin: 15px;
-    background-color: aqua;
-    color: #333;
-}
-
-body img {
-    display: grid;
-    grid-template-rows: auto;
-    align-items: center;
-}
-
-body {
-    text-align: center;
-}
-
-img {
-    display: flex;
-    margin: 0 auto;
-}
-
-header {
-    display: grid;
-    grid-template-columns: 150px auto;
-    align-items: center;
-    padding: 10px;
-    background-color: #ddd;
 }
 
 /* Cabeçalho */
 
-footer {
-    display: grid;
-    grid-template-columns: 150px auto;
-    align-items: center;
-    padding: 10px;
-    background-color: #f0f0f0;
-}
-
-footer .social {
-    display: flex;
-    gap: 10px;
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    background-color: #f0f0f0;
-    color: #333 text-align center;
-    padding: 10px;
-    margin: 0;
-
-}
-
-footer .social img {
-    width: 30px;
-    height: 30px;
-}
-
-class.equipe,
-img {
-    display: inline;
-    align-items: baseline;
-}
-
-footer {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
-    background-color: #333;
+    padding: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+header,
+footer {
+    background-color: #dabbbb;
     color: #fff;
-    flex-wrap: wrap;
+    padding: 30px;
+    text-align: center;
 }
 
 footer .social {
     display: flex;
     gap: 10px;
+    float: right;
+
 }
 
 footer .social img {
-    background-color: #aaa;
     width: 30px;
     height: 30px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Layout principal com grid */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* duas colunas */
+    gap: 20px;
+    padding: 20px;
+}
+
+main h1,
+main p {
+    grid-column: 1 / span 2;
+    /* ocupa as duas colunas */
+    text-align: center;
+}
+
+/* Mapa */
+iframe {
+    width: 100%;
+    height: 300px;
+    border: 2px solid #ccc;
+}
+
+/* Formulário */
+.formulario {
+    border: 2px solid #ccc;
+    padding: 15px;
+}
+
+/* Equipe */
+.equipe {
+    grid-column: 1 / span 2;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.galeria figure {
+    border: 2px solid #ccc;
+    padding: 10px;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 2px solid #ccc;
+    text-align: center;
+}
+
+.contato-container {
+    display: flex;
+    /* coloca lado a lado */
+    justify-content: space-between;
+    gap: 20px;
+    /* espaço entre mapa e formulário */
+    margin-top: 20px;
+}
+
+.contato-container iframe {
+    flex: 1;
+    /* ocupa metade */
+    min-height: 300px;
+
+}
+
+.contato-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    /* centraliza */
+}
+
+.contato-container iframe,
+.contato-container .formulario {
+    flex: 1;
+    min-height: 300px;
+    border: 2px solid #ccc;
+}
+
+.equipe {
+    margin-top: 40px;
+    text-align: center;
+    border: solid 1px #333
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }

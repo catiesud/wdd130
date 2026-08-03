@@ -4,19 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="contato com a Rafting & Natureza. Informações de endereço, telefone, e-mail,
-      mapa e formulário para dúvidas, reservas e sugestões ">
-
-  <title>Fale Conosco- Rafting & Natureza</title>
+  <meta name="description"
+    content="Contato com a Rafting & Natureza. Informações de endereço, telefone, e-mail, mapa e formulário para dúvidas, reservas e sugestões.">
   <meta name="author" content="Catiana Guillaume">
+  <title>Fale Conosco - Rafting & Natureza</title>
   <link rel="stylesheet" href="estilos/rafting.css">
 </head>
 
 <body>
+  <!-- Cabeçalho -->
   <header>
-    <img src="imagens/logo.png" alt="">
+    <img src="imagens/logo.png" alt="Logo Rafting & Natureza" width="150">
     <nav>
-      <a href=" index.html">Página Inicial</a>
+      <a href="index.html">Página Inicial</a>
       <a href="sobre.html">Sobre Nós</a>
       <a href="passeios.html">Passeios</a>
       <a href="contato.html">Fale Conosco</a>
@@ -29,77 +29,72 @@
     <p>
       Rua Riachuelo 85<br>
       São Paulo, SP<br>
-      <a href="tel:+5511961747566">+55 1196174-7566</a><br>
+      <a href="tel:+5511961747566">+55 11 96174-7566</a><br>
       <a href="mailto:info@corredeiras.com">info@corredeiras.com</a>
     </p>
 
     <!-- Contêiner para mapa + formulário -->
     <div class="contato-container">
       <!-- Mapa -->
-      <iframe src="https://www.google.com/maps/embed?..."></iframe>
+      <iframe src="https://www.google.com/maps/embed?..." width="100%" height="300"
+        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
       <!-- Formulário -->
-      <div>
-        <section class="formulario">
-          <h2>Fale Conosco</h2>
-          <form>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
+      <section class="formulario">
+        <h2>Fale Conosco</h2>
+        <form>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
 
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
 
-            <p>Propósito da Mensagem:</p>
-            <input type="radio" id="consulta" name="proposito" value="consulta" required>
-            <label for="consulta">Consulta Geral</label><br>
+          <p>Propósito da Mensagem:</p>
+          <input type="radio" id="consulta" name="proposito" value="consulta" required>
+          <label for="consulta">Consulta Geral</label><br>
 
-            <input type="radio" id="reserva" name="proposito" value="reserva">
-            <label for="reserva">Pergunta sobre Reserva</label><br>
+          <input type="radio" id="reserva" name="proposito" value="reserva">
+          <label for="reserva">Pergunta sobre Reserva</label><br>
 
-            <input type="radio" id="sugestao" name="proposito" value="sugestao">
-            <label for="sugestao">Sugestão de Site</label><br>
+          <input type="radio" id="sugestao" name="proposito" value="sugestao">
+          <label for="sugestao">Sugestão de Site</label><br>
 
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" required></textarea>
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" required></textarea>
 
-            <input type="checkbox" id="newsletter" name="newsletter">
-            <label for="newsletter">Quero receber a newsletter mensal</label><br>
+          <input type="checkbox" id="newsletter" name="newsletter">
+          <label for="newsletter">Quero receber a newsletter mensal</label><br>
 
-            <button type="submit">Entrar em Contato!</button>
-          </form>
-        </section>
-
-      </div>
-  </main>
-  <!-- Perfis de Funcionários -->
-  <section class="equipe">
-    <h2>Estamos Aqui para Servi-lo</h2>
-    <div class="galeria">
-      <figure>
-        <img src="imagens/funcionario-lucas.png" alt="Perfil doFuncionário Lucas Oliveira"
-          width="150">
-        <figcaption>Lucas Oliveira – Atendimento</figcaption>
-      </figure>
-      <figure>
-        <img src="imagens/funcionariolucassouza.png" alt="Perfil do Funcionário Lucas Souza"
-          width="150">
-        <figcaption>Lucas Souza – Reservas</figcaption>
-      </figure>
-      <figure>
-        <img src="imagens/equiperafting.png" alt="foto equipe" width="150">
-        <figcaption>equipe – Suporte Técnico</figcaption>
-      </figure>
+          <button type="submit">Entrar em Contato!</button>
+        </form>
+      </section>
     </div>
-  </section>
-  </main>
 
+    <!-- Equipe -->
+    <section class="equipe">
+      <h2>Estamos Aqui para Servi-lo</h2>
+      <div class="galeria">
+        <figure>
+          <img src="imagens/funcionario-lucas.png" alt="Perfil do Funcionário Lucas Oliveira"
+            width="150">
+          <figcaption>Lucas Oliveira – Atendimento</figcaption>
+        </figure>
+        <figure>
+          <img src="imagens/funcionariolucassouza.png" alt="Perfil do Funcionário Lucas Souza"
+            width="150">
+          <figcaption>Lucas Souza – Reservas</figcaption>
+        </figure>
+        <figure>
+          <img src="imagens/equiperafting.png" alt="Equipe de Suporte Técnico" width="150">
+          <figcaption>Equipe – Suporte Técnico</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
 
   <!-- Rodapé -->
-
   <footer>
     <p>&copy; 2026 Rafting & Natureza 🌻 Catiana Guillaume 🌻</p>
-
-    <!-- Nav obrigatório no footer -->
     <nav class="redes-sociais">
       <a href="https://facebook.com" target="_blank">
         <img src="imagens/facebook-rafting.svg" alt="Facebook" width="50">
@@ -112,8 +107,6 @@
       </a>
     </nav>
   </footer>
-
-
 </body>
 
 </html>

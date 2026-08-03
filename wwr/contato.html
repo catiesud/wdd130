@@ -4,97 +4,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Fale Conosco</title>
-  <meta name="description"
-    content="Entre em contato com a Rafting & Natureza. Informações de endereço, telefone, e-mail, mapa e formulário para dúvidas, reservas e sugestões.">
-  <link rel="stylesheet" href="estilos/contato.css">
+  <meta name="description" content="contato com a Rafting & Natureza. Informações de endereço, telefone, e-mail,
+mapa e formulário para dúvidas, reservas e sugestões ">
+  <meta name=" author" content="Catiana Guillaume">
+
+  <link rel=" stylesheet" href="estilos/contato.css">
 </head>
+
 
 <body>
 
   <!-- Cabeçalho -->
   <header>
+
     <img src="imagens/logo.png" alt="Logo rafting" width="150">
     <nav>
-      <a href="index.html">Página Inicial</a>
-      <a href="sobre.html">Sobre Nós</a>
-      <a href="passeios.html">Passeios</a>
-      <a href="contato.html">Fale Conosco</a>
+      <a href="#">Pagina inicial</a>
+      <a href="#">Sobre Nós</a>
+      <a href="#">Passeios</a>
+      <a href="#">Contato</a>
     </nav>
   </header>
 
   <!-- Conteúdo Principal -->
   <main>
     <h1>Rafting & Natureza</h1>
-    <p>Rua Rachuelo 85<br>
+    <p>
+      Rua Riachuelo 85<br>
       São Paulo, SP<br>
       <a href="tel:+5511961747566">+55 1196174-7566</a><br>
       <a href="mailto:info@corredeiras.com">info@corredeiras.com</a>
     </p>
 
-    <!-- Mapa -->
-    <iframe src="https://www.google.com/maps/embed?..."></iframe>
+    <!-- Contêiner para mapa + formulário -->
+    <div class="contato-container">
+      <!-- Mapa -->
+      <iframe src="https://www.google.com/maps/embed?..."></iframe>
 
-    <!-- Perfis de Funcionários -->
-    <section class="equipe">
-      <h2>Estamos Aqui para Servi-lo</h2>
-      <div class="galeria">
-        <figure>
-          <img src="imagens/funcionario-lucas.png" alt="Perfil doFuncionário Lucas Oliveira"
-            width="150">
-          <figcaption>Lucas Oliveira – Atendimento</figcaption>
-        </figure>
-        <figure>
-          <img src="imagens/funcionariolucassouza.png" alt="Perfil do Funcionário Lucas Souza"
-            width="150">
-          <figcaption>Lucas Souza – Reservas</figcaption>
-        </figure>
-        <figure>
-          <img src="imagens/equiperafting.png" alt="foto equipe" width="150">
-          <figcaption>equipe – Suporte Técnico</figcaption>
-        </figure>
+      <!-- Formulário -->
+      <div>
+        <section class="formulario">
+          <h2>Fale Conosco</h2>
+          <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <p>Propósito da Mensagem:</p>
+            <input type="radio" id="consulta" name="proposito" value="consulta" required>
+            <label for="consulta">Consulta Geral</label><br>
+
+            <input type="radio" id="reserva" name="proposito" value="reserva">
+            <label for="reserva">Pergunta sobre Reserva</label><br>
+
+            <input type="radio" id="sugestao" name="proposito" value="sugestao">
+            <label for="sugestao">Sugestão de Site</label><br>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">Quero receber a newsletter mensal</label><br>
+
+            <button type="submit">Entrar em Contato!</button>
+          </form>
+        </section>
+
       </div>
-    </section>
-
-    <!-- Formulário -->
-    <section class="formulario">
-      <h2>Fale Conosco</h2>
-      <form>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
-
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
-
-        <p>Propósito da Mensagem:</p>
-        <input type="radio" id="consulta" name="proposito" value="consulta" required>
-        <label for="consulta">Consulta Geral</label><br>
-
-        <input type="radio" id="reserva" name="proposito" value="reserva">
-        <label for="reserva">Pergunta sobre Reserva</label><br>
-
-        <input type="radio" id="sugestao" name="proposito" value="sugestao">
-        <label for="sugestao">Sugestão de Site</label><br>
-
-        <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem" required></textarea>
-
-        <input type="checkbox" id="newsletter" name="newsletter">
-        <label for="newsletter">Quero receber a newsletter mensal</label><br>
-
-        <button type="submit">Entrar em Contato!</button>
-      </form>
-    </section>
   </main>
+  <!-- Perfis de Funcionários -->
+  <section class="equipe">
+    <h2>Estamos Aqui para Servi-lo</h2>
+    <div class="galeria">
+      <figure>
+        <img src="imagens/funcionario-lucas.png" alt="Perfil doFuncionário Lucas Oliveira"
+          width="150">
+        <figcaption>Lucas Oliveira – Atendimento</figcaption>
+      </figure>
+      <figure>
+        <img src="imagens/funcionariolucassouza.png" alt="Perfil do Funcionário Lucas Souza"
+          width="150">
+        <figcaption>Lucas Souza – Reservas</figcaption>
+      </figure>
+      <figure>
+        <img src="imagens/equiperafting.png" alt="foto equipe" width="150">
+        <figcaption>equipe – Suporte Técnico</figcaption>
+      </figure>
+    </div>
+  </section>
+  </main>
+
 
   <!-- Rodapé -->
   <footer>
-    <p>&copy; 2026 Rafting & Natureza 🌻 Catiana Guillaume 🌻</p>
+
+    <p>&copy; 2026 Rafting & Natureza🌻Catiana Guillaume🌻</p>
     <div class="social">
-      <img src="imagens/facebook-rafting.svg" alt="Facebook" width="150">
-      <img src="imagens/instagram-rafting.svg" alt="Instagram" width="150">
-      <img src="imagens/linkedin-rafting.svg" alt="Linkedin" width="150">
+      <img src="imagens/facebook-rafting.svg" alt="Facebook Placeholder">
+      <img src="imagens/instagram-rafting.svg" alt="Instagram Placeholder">
+      <img src="imagens/linkedin-rafting.svg" alt="Linkedin Placeholder">
     </div>
+
   </footer>
 
 </body>

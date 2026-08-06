@@ -1,0 +1,59 @@
+header,
+footer {
+    display: grid;
+    grid-template-columns: 200px auto;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #c5c7c8;
+    color: #333;
+}
+
+/* Logo/título */
+header h1,
+footer p {
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Navegação */
+header nav ul,
+footer nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+header nav a,
+footer nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover,
+footer nav a:hover {
+    color: #ffcc00;
+    /* destaque rafting */
+}
+
+/* 🌐 Responsividade */
+@media (max-width: 768px) {
+
+    header,
+    footer {
+        grid-template-columns: 1fr;
+        /* tudo em uma coluna */
+        text-align: center;
+    }
+
+    header nav ul,
+    footer nav ul {
+        flex-direction: column;
+        gap: 0.8rem;
+        justify-content: center;
+    }
+}

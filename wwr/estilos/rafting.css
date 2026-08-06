@@ -3,10 +3,31 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   line-height: 1.5;
+  padding: 2rem;
+  background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+  border-radius: 10px;
+}
+
+header,
+footer {
+  display: grid;
+  grid-template-columns: 200px auto;
+  /* logo/título à esquerda, menu à direita */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #c5c7c8;
+  /* cor rafting */
+  color: #0f0b0b;
+}
+
+/* Ajuste para logo/título */
+header h1,
+footer p {
+  margin: 0;
+  font-weight: bold;
 }
 
 /* Cabeçalho */
-
 header,
 footer {
   display: grid;
@@ -22,6 +43,7 @@ header img {
 
 header nav a {
   margin: 0 10px;
+  text-align: line;
   text-decoration: none;
   color: #333;
   font-weight: bold;
@@ -155,4 +177,248 @@ footer .redes-sociais {
   gap: 15px;
   margin-left: auto;
   /* garante que fique à direita */
+}
+
+/* 🌊 Seção CTA */
+.cta {
+  background: linear-gradient(135deg, #0099cc, #00cc99);
+  color: #fff;
+  text-align: center;
+  padding: 3rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta .btn {
+  background: #ff6600;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cta .btn:hover {
+  background: #cc5200;
+  transform: scale(1.05);
+}
+
+/* 🏞️ Seção Passeios */
+.passeios-detalhes {
+  padding: 2rem;
+  background: #f4fdfd;
+  border-radius: 10px;
+}
+
+.passeios-detalhes h2 {
+  text-align: center;
+  color: #006699;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+/* 🎨 Grid de Passeios */
+.grid-passeios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.grid-passeios article {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-passeios article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+.grid-passeios img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.grid-passeios h3 {
+  background: #0099cc;
+  color: #fff;
+  padding: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.grid-passeios p {
+  padding: 1rem;
+  color: #333;
+  font-size: 1rem;
+}
+
+/*  gradiente animado */
+.tabela-passeios {
+  padding: 2rem;
+  background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+  border-radius: 10px;
+}
+
+.tabela-passeios h2 {
+  text-align: center;
+  color: #006699;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* 💧 Cabeçalho com gradiente animado */
+@keyframes gradiente-agua {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.tabela-passeios th {
+  background: linear-gradient(90deg, #0099cc, #00ccff, #006699);
+  background-size: 200% 200%;
+  animation: gradiente-agua 6s ease infinite;
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #004466;
+}
+
+/* 🪶 Corpo da tabela */
+.tabela-passeios td {
+  padding: 1rem;
+  text-align: center;
+  color: #333;
+  font-weight: 500;
+}
+
+.tabela-passeios tr:nth-child(even) {
+  background-color: #e0f7fa;
+}
+
+.tabela-passeios tr:hover {
+  background-color: #b2ebf2;
+  transition: background-color 0.3s ease;
+}
+
+/* 💎 Bordas e cantos arredondados */
+.tabela-passeios table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fefefe;
+  box-shadow: 0 4px 10px rgba(0, 102, 153, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tabela-passeios th:first-child {
+  border-top-left-radius: 8px;
+}
+
+.tabela-passeios th:last-child {
+  border-top-right-radius: 8px;
+}
+
+.aventura h2 {
+  background: linear-gradient(90deg, #0099cc, #00ccff, #006699);
+  background-size: 200% 200%;
+  animation: gradiente-agua 6s ease infinite;
+  color: #fff;
+  padding: 1rem;
+  margin: 5rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #004466;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  /* overlay escuro */
+}
+
+.hero article {
+  position: relative;
+  z-index: 2;
+  /* garante que fique acima do overlay */
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  margin-top: -50px;
+  border-radius: 8px;
+}
+
+.historia {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  /* p à esquerda, imagem no centro, p à direita */
+  gap: 20px;
+  align-items: center;
+  text-align: justify;
+  margin: 2rem auto;
+  max-width: 1000px;
+}
+
+.historia h2 {
+  grid-column: 1 / -1;
+  /* título ocupa toda a largura */
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #006699;
+}
+
+.historia p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.historia img {
+  max-width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }

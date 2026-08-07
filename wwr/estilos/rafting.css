@@ -12,19 +12,10 @@ header,
 footer {
   display: grid;
   grid-template-columns: 200px auto;
-  /* logo/título à esquerda, menu à direita */
   align-items: center;
   padding: 10px 20px;
   background-color: #c5c7c8;
-  /* cor rafting */
   color: #0f0b0b;
-}
-
-/* Ajuste para logo/título */
-header h1,
-footer p {
-  margin: 0;
-  font-weight: bold;
 }
 
 /* Cabeçalho */
@@ -43,7 +34,7 @@ header img {
 
 header nav a {
   margin: 0 10px;
-  text-align: line;
+  text-align: line right;
   text-decoration: none;
   color: #333;
   font-weight: bold;
@@ -175,11 +166,10 @@ footer p {
 footer .redes-sociais {
   display: flex;
   gap: 15px;
-  margin-left: auto;
-  /* garante que fique à direita */
+  margin-right: auto;
 }
 
-/* 🌊 Seção CTA */
+/*  Seção CTA */
 .cta {
   background: linear-gradient(135deg, #0099cc, #00cc99);
   color: #fff;
@@ -232,7 +222,7 @@ footer .redes-sociais {
   text-transform: uppercase;
 }
 
-/* 🎨 Grid de Passeios */
+/*  Grid de Passeios */
 .grid-passeios {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -394,4 +384,43 @@ footer .redes-sociais {
   margin: 0 auto;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero h1,
+.hero p,
+.hero .overlay-img {
+  position: absolute;
+  z-index: 2;
+  color: #00cc99;
+  margin-block: unset;
+  padding: auto;
+
+}
+
+.hero h1 {
+  top: 20%;
+  left: 10%;
+}
+
+.hero p {
+  top: 35%;
+  left: 10%;
+}
+
+.hero .overlay-img {
+  bottom: 10%;
+  right: 10%;
+  width: 150px;
 }

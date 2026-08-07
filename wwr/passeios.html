@@ -12,51 +12,71 @@
   <link rel="stylesheet" href="estilos/raftigresponsiva.css">
   <script></script>
 </head>
+<style>
+  /* Cabeçalho */
+  header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    align-items: center;
+    padding: 10px;
+    background-color: #ddd;
+  }
+
+  header img {
+    background-color: #aaa;
+    width: 120px;
+    height: 100px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: baseline;
+    flex-wrap: initial;
+    direction: left;
+  }
+
+  nav a {
+    background-color: #bbb;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #000;
+    margin: 5px;
+  }
+</style>
+
 
 <body>
-  <header>
-    <img src="imagens/logo.png" alt="Logo Rafting & Natureza" width="150">
+  <header><img src="imagens/logo.png" alt="Logo Rafting & Natureza" width="150">
     <h1>Rafting & Natureza</h1>
-
-    <nav>
-      <a href="index.html">Página Inicial</a>
-      <a href="sobre.html">Sobre Nós</a>
-      <a href="passeios.html">Passeios</a>
-      <a href="contato.html">Fale Conosco</a>
-    </nav>
+    <nav><a href="index.html">Página Inicial</a><a href="sobre.html">Sobre Nós</a><a
+        href="passeios.html">Passeios</a><a href="contato.html">Fale Conosco</a></nav>
   </header>
-
   <main>
     <section class="cta">
       <h2>Pronto para a aventura?</h2>
-      <p>Entre em contato e reserve já seu passeio!</p>
-      <a href="contato.html" class="btn">Fale Conosco</a>
+      <p>Entre em contato e reserve já seu passeio !</p><a href="contato.html" class="btn">Fale
+        Conosco</a>
     </section>
-
     <section class="passeios-detalhes">
       <h2>Nossos Passeios</h2>
       <div class="grid-passeios">
-        <article>
-          <img src="imagens/rio-cristalino.png" alt="Rafting no rio cristalino">
+        <article><img src="imagens/rio-cristalino.png" alt="Rafting no rio cristalino">
           <h3>Passeio e Aventura</h3>
           <p>Um percurso cheio de corredeiras intensas para quem busca emoção e adrenalina. Ideal
             para grupos de amigos aventureiros.</p>
         </article>
-        <article>
-          <img src="imagens/família-rafting.png" alt="Família aproveitando rafting">
+        <article><img src="imagens/família-rafting.png" alt="Família aproveitando rafting">
           <h3>Passeio em Família</h3>
-          <p>Descida tranquila e segura, perfeita para famílias e iniciantes. Aproveite a natureza
-            com toda segurança.</p>
+          <p>Descida tranquila e segura,
+            perfeita para famílias e iniciantes. Aproveite a natureza com toda segurança.</p>
         </article>
-        <article>
-          <img src="imagens/por-do-sol.png" alt="Rafting ao pôr do sol">
+        <article><img src="imagens/por-do-sol.png" alt="Rafting ao pôr do sol">
           <h3>Passeio ao pôr do sol </h3>
-          <p>Uma experiência única ao pôr do sol, combinando aventura e paisagens deslumbrantes. Um
-            passeio inesquecível.</p>
+          <p>Uma experiência única ao pôr do sol,
+            combinando aventura e paisagens deslumbrantes. Um passeio inesquecível.</p>
         </article>
       </div>
     </section>
-
     <section class="tabela-passeios">
       <h2>Todos os Passeios Disponíveis</h2>
       <table>
@@ -91,20 +111,14 @@
       </table>
     </section>
   </main>
-
   <footer>
-    <p>&copy; 2026 Rafting & Natureza 🌻 Catiana Guillaume 🌻</p>
-    <nav class="redes-sociais">
-      <a href="https://facebook.com" target="_blank">
-        <img src="imagens/facebook-rafting.svg" alt="Facebook" width="50">
-      </a>
-      <a href="https://instagram.com" target="_blank">
-        <img src="imagens/instagram-rafting.svg" alt="Instagram" width="50">
-      </a>
-      <a href="https://linkedin.com" target="_blank">
-        <img src="imagens/linkedin-rafting.svg" alt="LinkedIn" width="50">
-      </a>
-    </nav>
+    <p>&copy;
+      2026 Rafting & Natureza 🌻 Catiana Guillaume 🌻</p>
+    <nav class="redes-sociais"><a href="https://facebook.com" target="_blank"><img
+          src="imagens/facebook-rafting.svg" alt="Facebook" width="50"></a><a
+        href="https://instagram.com" target="_blank"><img src="imagens/instagram-rafting.svg"
+          alt="Instagram" width="50"></a><a href="https://linkedin.com" target="_blank"><img
+          src="imagens/linkedin-rafting.svg" alt="LinkedIn" width="50"></a></nav>
   </footer>
 </body>
 

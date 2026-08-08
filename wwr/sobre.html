@@ -4,269 +4,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wireframe Responsivo - Sobre Nós</title>
+  <title>Sobre Nós - Rafting & Natureza</title>
   <meta name="description"
-    content=" Rafting & Natureza. É uma empresa de refting que oferece experiença para quem gosta aventura com segurança">
+    content="Rafting & Natureza é uma empresa de rafting que oferece experiências seguras e emocionantes para quem gosta de aventura.">
   <meta name="author" content="Catiana Guillaume">
-  <link rel="stylesheet" href="contato.html">
-  <link rel="stylesheet" href="passeios.html">
   <link rel="stylesheet" href="estilos/rafting.css">
-
-  <style>
-    /* Cabeçalho */
-    header {
-      display: grid;
-      grid-template-columns: 150px auto;
-      align-items: center;
-      padding: 10px;
-      background-color: #ddd;
-    }
-
-    header img {
-      background-color: #aaa;
-      width: 120px;
-      height: 60px;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      background-color: #bbb;
-      padding: 8px 12px;
-      text-decoration: none;
-      color: #000;
-      margin: 5px;
-    }
-
-    /* Sobreposição centralizada na parte inferior */
-    .hero .overlay {
-      position: absolute;
-      bottom: 20px;
-      /* distância da base da imagem */
-      left: 50%;
-      /* centraliza horizontalmente */
-      transform: translateX(-50%);
-      /* ajusta para o centro exato */
-      background-color: rgba(38, 70, 83, 0.8);
-      /* cor translúcida */
-      color: #fff;
-      /* texto branco para contraste */
-      padding: 12px 24px;
-      border-radius: 8px;
-      text-align: center;
-      font-family: var(--fonte-titulo);
-    }
-
-    /* Seção História */
-    .historia {
-      padding: 20px;
-      background-color: #0c0;
-    }
-
-    .historia h2 {
-      background-color: #0cf;
-      padding: 10px;
-    }
-
-    .historia p {
-      background-color: #0cf;
-      padding: 10px;
-      margin: 10px 0;
-      float: right;
-    }
-
-    .historia img {
-      background-color: #0cf;
-
-      max-width: 100%;
-      height: auto;
-      margin: auto;
-    }
-
-    .historia p {
-      background-color: #0cf;
-      padding: 10px;
-      margin: 10px 0;
-      float: left;
-    }
-
-    /* Seção Aventura */
-    .aventura {
-      padding: 20px;
-      background-color: #f9f9f9;
-      border: solid 4px #0cf;
-    }
-
-    .aventura h2 {
-      background-color: #ccc;
-      padding: 10px;
-      border: solid 1px #0cf;
-
-    }
-
-    .galeria {
-      display: flex;
-      justify-content: space-between;
-      gap: 10px;
-      flex-wrap: wrap;
-      border: solid 1px #0cf;
-
-    }
-
-    .galeria figure {
-      flex: 1;
-      min-width: 150px;
-      text-align: center;
-      background-color: #ddd;
-      padding: 10px;
-    }
-
-    .galeria img {
-      background-color: #aaa;
-      width: 100%;
-      height: 100px;
-      display: block;
-      margin-bottom: 5px;
-    }
-
-    .galeria figcaption {
-      background-color: #bbb;
-      padding: 5px;
-    }
-
-    /* Rodapé */
-    footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px;
-      background-color: #ddd;
-      color: eeee#333;
-      flex-wrap: wrap;
-    }
-
-    footer .social {
-      display: flex;
-      gap: 10px;
-    }
-
-    footer .social img {
-      background-color: #aaa;
-      width: 30px;
-      height: 30px;
-    }
-
-    /* Responsividade */
-    @media (max-width: 768px) {
-      header {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-
-      nav {
-        justify-content: center;
-      }
-
-      .galeria {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .galeria figure {
-        width: 80%;
-      }
-
-      footer {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      footer .social {
-        justify-content: center;
-      }
-
-      /* Sobreposição */
-      .hero h1 {
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        transform: translateX(-50%);
-        color: #fff;
-        font-size: 2.5rem;
-        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
-        background: rgba(0, 102, 153, 0.6);
-        /* azul rafting translúcido */
-        padding: 0.5rem 1rem;
-        border-radius: 6px;
-      }
-
-      .hero article {
-        position: absolute;
-        bottom: 10%;
-        left: 50%;
-        transform: translateX(-50%);
-        max-width: 600px;
-        background: rgba(255, 255, 255, 0.85);
-        padding: 1rem;
-        border-radius: 8px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-        text-align: center;
-      }
-
-      .hero article img {
-        width: 100%;
-        height: auto;
-        border-radius: 6px;
-        margin-bottom: 0.8rem;
-      }
-
-      .hero article p {
-        color: #333;
-        font-size: 1rem;
-        line-height: 1.4;
-      }
-
-    }
-  </style>
 </head>
 
-<body>
+<body class="sobre">
 
   <!-- Cabeçalho -->
   <header>
-    <img src="imagens/logo.png" alt="Logo rafting" width="150">
+    <img src="imagens/logo.png" alt="Logo Rafting & Natureza" width="150">
     <nav>
-      <a href="#">Pagina inicial</a>
-      <a href="#">Sobre Nós</a>
-      <a href="#">Passeios</a>
-      <a href="#">Contato</a>
+      <a href="index.html">Página Inicial</a>
+      <a href="sobre.html" class="active">Sobre Nós</a>
+      <a href="passeios.html">Passeios</a>
+      <a href="contato.html">Contato</a>
     </nav>
   </header>
-  <header>
-    <!-- conteúdo do header aqui -->
-  </header>
 
-  <div class="hero">
-    <img src="imagens/raftinghero-atu.png" alt="imagem rafting" width="150" height="100">
-    <h1>Rafting & Natureza</h1>
-    <p>Somos uma empresa dedicada a oferecer emoção e entusiasmo sobre as atividades de
-      aventura e natureza e sobre as águas.</p>
-    <img src="imagens/raftingsave-atua.jpg" alt="imagen rafting">
-  </div>
+  <!-- Hero -->
+  <section class="hero">
+    <img src="imagens/raftinghero-atu.png" alt="Imagem rafting principal">
+    <div class="overlay">
+      <h1>Rafting & Natureza</h1>
+      <p>Somos uma empresa dedicada a oferecer emoção e entusiasmo em atividades de aventura e
+        natureza sobre as águas.</p>
+    </div>
+  </section>
 
   <!-- Seção História -->
   <section class="historia">
-    <h2>História</h2>
-    <p>Há muitos anos, um grupo de amigos apaixonados por rios e montanhas decidiu transformar
-      sua diversão em uma missão:</p>
-    <img src="imagens/raftinghero.png" alt="">
-    <p>Levar outras pessoas para sentir a mesma emoção que eles sentiam ao descer corredeiras.
-      Assim nasceu a Rafting & Natureza, uma empresa que acredita que cada descida é mais do que
-      um passeio — é uma jornada de coragem, união e respeito pela natureza.</p>
+    <h2>Nossa História</h2>
+    <p>Há muitos anos, um grupo de amigos apaixonados por rios e montanhas decidiu transformar sua
+      diversão em uma missão:</p>
+    <img src="imagens/raftinghero.png" alt="Imagem histórica de rafting">
+    <p>Levar outras pessoas para sentir a mesma emoção que eles sentiam ao descer corredeiras. Assim
+      nasceu a Rafting & Natureza, uma empresa que acredita que cada descida é mais do que um
+      passeio — é uma jornada de coragem, união e respeito pela natureza.</p>
   </section>
 
   <!-- Seção Aventura -->
@@ -286,26 +62,27 @@
         <figcaption>Rio Tibagi</figcaption>
       </figure>
       <figure>
-        <img src="imagens/rio-paranapanema.jpg" alt="Imagem Rio Paranapanema" width="150"
-          height="150">
+        <img src="imagens/rio-paranapanema.jpg" alt="Imagem Rio Paranapanema">
         <figcaption>Rio Paranapanema</figcaption>
       </figure>
       <figure>
-        <img src="imagens/raftingsave.jpg" alt="Imagem Rio Salto Negro">
+        <img src="imagens/raftingsave.jpg" alt="Imagem Salto Rio Negro">
         <figcaption>Salto Rio Negro</figcaption>
       </figure>
     </div>
   </section>
 
-
   <!-- Rodapé -->
   <footer>
-    <p>&copy; 2026 Rafting & Natureza🌻Catiana Guillaume🌻</p>
-    <div class="social">
-      <img src="imagens/facebook-rafting.svg" alt="Facebook Placeholder">
-      <img src="imagens/instagram-rafting.svg" alt="Instagram Placeholder">
-      <img src="imagens/linkedin-rafting.svg" alt="Linkedin Placeholder">
-    </div>
+    <p>&copy; 2026 Rafting & Natureza 🌻 Catiana Guillaume 🌻</p>
+    <nav class="redes-sociais">
+      <a href="https://facebook.com" target="_blank"><img src="imagens/facebook-rafting.svg"
+          alt="Facebook" width="50"></a>
+      <a href="https://instagram.com" target="_blank"><img src="imagens/instagram-rafting.svg"
+          alt="Instagram" width="50"></a>
+      <a href="https://linkedin.com" target="_blank"><img src="imagens/linkedin-rafting.svg"
+          alt="LinkedIn" width="50"></a>
+    </nav>
   </footer>
 
 </body>

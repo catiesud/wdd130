@@ -16,8 +16,16 @@ footer p {
 }
 
 /* Navegação */
-header nav ul,
-footer nav ul {
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-end;
+    margin: auto;
+    padding: auto;
+}
+
+header nav ul {
     list-style: none;
     display: flex;
     gap: 1.5rem;
